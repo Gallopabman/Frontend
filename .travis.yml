@@ -5,4 +5,4 @@ services:
 before_install:
   - docker build -t gallopabman/frontend -f Dockerfile.dev .
 script:  
-  - docker -e CI=true run gallopabman/frontend npm run test 
+  - docker CI=true run gallopabman/frontend npm run test 
